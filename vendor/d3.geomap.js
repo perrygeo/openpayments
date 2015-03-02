@@ -509,7 +509,7 @@
       if (geomap.data_by_id[id]) {
         return geomap.colorize(geomap.data_by_id[id][col]);
       } else {
-        return '#fcfcfc';
+        return '#fdfdfd';
       }
     };
 
@@ -587,7 +587,7 @@
       domain_max = geomap["private"].domain[geomap["private"].domain.length - 1];
       geomap.properties.svg.select('g#legend').remove();
       lg = geomap.properties.svg.append('g').attr('id', 'legend').attr('width', box_w).attr('height', box_h).attr('transform', 'translate(0,' + offset_y + ')');
-      lg.append('rect').attr('class', 'legend-bg').attr('width', box_w).attr('height', box_h).attr('transform', 'translate(0, 0');
+      lg.append('rect').attr('class', 'legend-bg').attr('width', box_w).attr('height', box_h).attr('transform', 'translate(0, 0)');
       l_tr = 'translate(' + offset_t + ',' + offset_t * 3 + ')';
       lg.append('rect').attr('class', 'legend-bar').attr('width', rect_w).attr('height', legend_h).attr('transform', l_tr);
       sg = lg.append('g').attr('transform', l_tr);
