@@ -1,17 +1,3 @@
-var formatCurrency = function(d) {
-    if (d < 1e6) {
-        d = d / 1000;
-        return '$' + d3.format(',.01f')(d) + 'k';
-    } else {
-        d = d / 1e6;
-        return '$' + d3.format(',.01f')(d) + 'M';
-    }
-}
-
-var formatCount = function(d) {
-    return d3.format(',.00f')(d);
-}
-
 
 var map = d3.geomap.choropleth()
     .geofile('data/usa_states.json')
@@ -23,13 +9,21 @@ var map = d3.geomap.choropleth()
     .colors(colorbrewer.YlGnBu[9])
     .format(formatCurrency);
 
-d3.csv('data/bycompany/-1.csv', function(error, data) {
-    d3.select('#map')
-        .datum(data)
-        .call(map.draw, map);
-});
-
 var companies = [];
+
+function formatCurrency(d) {
+    if (d < 1e6) {
+        d = d / 1000;
+        return '$' + d3.format(',.01f')(d) + 'k';
+    } else {
+        d = d / 1e6;
+        return '$' + d3.format(',.01f')(d) + 'M';
+    }
+}
+
+function formatCount(d) {
+    return d3.format(',.00f')(d);
+}
 
 function addToSelect(companies) {
     $.each(companies, function (index, d) {
@@ -135,7 +129,7 @@ function getCompanyByHash(hash) {
     var company;
     var companySlug = hash.replace("#","");
     if (companySlug === "") {
-        return
+        return null;
     }
 
     for (var i = companies.length - 1; i >= 0; i--) {
@@ -157,7 +151,6 @@ var selectizeElem;
 function activateSelectize() {
     selectizeElem = $('#select-company').selectize({
         create: true,
-        //sortField: 'text',
         closeAfterSelect: true,
         onChange: displayCompanyInfo
     });
@@ -178,8 +171,8 @@ $(document).ready(function() {
         var startId = -1;
         var startCompany = getCompanyByHash(window.location.hash);
         if (startCompany) { startId = startCompany.id; }
-
         selectizeElem[0].selectize.setValue(startId);
+
         displayCompanyInfo(startId);
 
     }).fail(function(jqXHR, textStatus) {
