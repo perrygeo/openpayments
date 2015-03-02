@@ -1,0 +1,9 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+AZ,7200.0,2,7200.0,2,0,0
+CA,16355.44,11,16355.44,11,0,0
+FL,500.0,1,500.0,1,0,0
+MN,11200.0,4,11200.0,4,0,0
+MO,8311.22,4,8311.22,4,0,0
+NY,1000.0,2,1000.0,2,0,0
+OH,4611.22,4,4611.22,4,0,0
+TX,24611.22,4,24611.22,4,0,0

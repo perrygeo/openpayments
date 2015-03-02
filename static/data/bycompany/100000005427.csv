@@ -1,0 +1,4 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+CA,13000.0,4,13000.0,4,0,0
+IN,5200.0,2,5200.0,2,0,0
+NJ,10400.0,1,10400.0,1,0,0

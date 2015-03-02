@@ -1,0 +1,9 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+CA,1171.67,7,1171.67,7,0,0
+IL,84.2,1,84.2,1,0,0
+IN,19.94,1,19.94,1,0,0
+MA,50.84,1,50.84,1,0,0
+NJ,158.24,2,158.24,2,0,0
+NV,81.86,2,81.86,2,0,0
+NY,395.83,5,395.83,5,0,0
+TX,819.11,6,819.11,6,0,0

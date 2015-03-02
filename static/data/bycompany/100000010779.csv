@@ -1,0 +1,4 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+NJ,108.0,1,108.0,1,0,0
+NY,2224.0,2,2224.0,2,0,0
+VA,120.0,2,120.0,2,0,0

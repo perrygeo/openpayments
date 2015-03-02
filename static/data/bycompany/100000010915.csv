@@ -1,0 +1,3 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+CA,6000.0,1,6000.0,1,0,0
+DC,5925.7,10,0,0,5925.7,10

@@ -1,0 +1,80 @@
+body {
+    padding: 22px;
+    letter-spacing: .04em;
+    font-size: 12pt;
+    line-height: 20pt !important;
+    font-family: Helvetica, Arial, sans-serif;
+    /*font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;*/
+    color: #555;
+    text-align: justify;
+    kerning: automatic;
+}
+a {
+    text-decoration: none;
+}
+#content {
+    max-width: 964px;
+    margin: 0 auto;
+}
+p {
+    max-width: 952px;
+}
+h1 {
+    padding: 48px 0 18px 0;
+    text-rendering: optimizelegibility;
+    /*letter-spacing: .08em;*/
+    margin-top: 21px;
+    margin-bottom: 10.5px;
+}
+footer {
+    margin-top: 36px;
+    text-align: center;
+    font-size: 9pt;
+}
+#main {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0 0 0;
+    font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
+}
+h3 {
+    font-size: 135%;
+    line-height: 22pt !important;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.company-name {
+    font-weight: 700;
+}
+.company-info {
+    text-align: left;
+    margin-left: 360px;
+}
+.products {
+    display: none;
+}
+.location {
+    display: none;
+}
+span.var {
+    font-weight: 700;
+}
+.search-container {
+    width: 290px;
+    float: left;
+}
+.null {
+    color: #ddd;
+}
+#map {
+    /*font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;*/
+}
+sup {
+    font-size:80%;
+}
+.selectize-dropdown, .selectize-input, .selectize-input input {
+    text-align:left;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 95%;
+    line-height: 18px;
+    -webkit-font-smoothing: inherit;
+}

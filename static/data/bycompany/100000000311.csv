@@ -1,0 +1,8 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+GA,750.0,1,750.0,1,0,0
+IL,500.0,1,500.0,1,0,0
+NC,750.0,1,750.0,1,0,0
+NY,963.3,2,750.0,1,213.3,1
+PA,2500.0,2,2500.0,2,0,0
+TN,250.0,1,250.0,1,0,0
+TX,2800.0,2,2800.0,2,0,0

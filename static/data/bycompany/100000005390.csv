@@ -1,0 +1,6 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+CA,32.32,2,32.32,2,0,0
+MA,1600.0,2,1600.0,2,0,0
+MI,2160.0,1,0,0,2160.0,1
+OH,5000.0,1,0,0,5000.0,1
+OK,2880.0,1,0,0,2880.0,1

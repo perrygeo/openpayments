@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <title>Geography of US Health Care Payments</title>
+  <link href="vendor/d3.geomap.css" rel="stylesheet">
+  <link href="vendor/selectize.default.css" rel="stylesheet">
+  <link href="vendor/cosmo.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+<div id="content">
+<!-- Begin HTML Content -->
+<h1> Geography of US Health Care Industry Payments</h1>
+<p>
+  The health care industry works together to solve the medical 
+  challenges of our day, which sometimes includes covering the costs of
+  research, gifts, speaking fees, meals and travel. 
+  
+  Health care companies are <a href="http://www.ama-assn.org/ama/pub/advocacy/topics/sunshine-act-and-physician-financial-transparency-reports.page">required to disclose</a>
+  their financial relationships with doctors and hospitals. The data is made publicly available
+  through the <a href="http://www.cms.gov/openpayments/">Open Payments</a> system run by the Centers for Medicare & Medicaid Services.
+</p>
+<p>
+  In the United States in 2013, physicians and hospitals received at least $691 million of financial compensation<sup>*</sup>
+  from health care product manufacturers. 
+  This interactive map allows you to view the data by company to explore the geographic pattern of payments within the health care industry. 
+</p>  
+<div id="main">
+    <h3> 
+        Payments from Health Care Product Manufacturers to Physicians and Hospitals in 2013 ($US)
+    </h3>
+    <div class="search-container">
+        <section>
+            <div>
+                <select id="select-company" placeholder="Search...">
+                </select>
+            </div>
+        </section>
+          <!-- <span id="company-name">all companies</span> -->
+          <div class="payment-summary dollars-total">
+            <span class="var" id="dollars-total">$691M</span> total payments
+          </div>
+          <div class="payment-summary location">
+            Located in
+            <span id="location">United States</span>
+          </div>
+    </div>  
+    <div class="company-info">
+        <span class="payment-summary physican">
+          Physicians received 
+          <span class="var" id="payments-phys">2.7 million</span>
+          payments
+          totaling 
+          <span class="var" id="dollars-phys">$475M</span>
+        </span>
+        <br>
+        <span class="payment-summary hospital">
+          Teaching Hospitals received 
+          <span class="var" id="payments-hosp">27 thousand</span>
+          payments totaling 
+          <span class="var" id="dollars-hosp">$216M</span>
+        </span>
+        <br>
+        <span class="payment-summary products">
+          Payments covered 
+          <span class="var" id="product-count"></span> 
+          associated products:
+          <span class="var" id="product-list"></span> 
+        </span>
+        <br>
+    </div>
+    <div id="map"></div>
+</div>
+<footer>
+  <p>
+    * This analysis is limited to undisputed general payments with published identifying information. <br> This map only displays data for companies with greater than $1000 in total payments. 
+    <br> 
+    Data source: Centers for Medicare & Medicaid Services <a href="http://www.cms.gov/OpenPayments/Explore-the-Data/Dataset-Downloads.html"><em>Open Payments</em></a>, version: 12/19/14 
+
+    <br>
+    Created by
+    <a href="http://perrygeo.com">Matt Perry</a> 
+    using <a href="">sqlite</a>, <a href="http://python.org/">python</a> and <a href="http://d3-geomap.github.io/">d3.geomap</a>.
+
+    <br>
+    Code hosted on <a href="https://github.com/perrygeo/visualize-openpayments">github</a>
+     &bull; CC BY-SA 2015
+  </p>
+</footer>
+<!-- End HTML Content -->
+</div>
+<script src="vendor/d3.geomap.dependencies.min.js"></script>
+<script src="vendor/d3.geomap.min.js"></script>
+<script src="vendor/jquery-1.11.2.min.js"></script> 
+<script src="vendor/selectize.js"></script> 
+<script src="main.js"></script> 
+</body>
+</html>
+
