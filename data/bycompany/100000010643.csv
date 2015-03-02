@@ -1,0 +1,9 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+FL,15.0,1,15.0,1,0,0
+GA,90.0,6,90.0,6,0,0
+MD,15.0,1,15.0,1,0,0
+MI,220.0,14,220.0,14,0,0
+MO,93.0,1,93.0,1,0,0
+NY,15.0,1,15.0,1,0,0
+OH,1175.0,2,1175.0,2,0,0
+PA,40.0,2,40.0,2,0,0

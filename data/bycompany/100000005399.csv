@@ -1,0 +1,7 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+CA,90.0,1,90.0,1,0,0
+CO,900.0,10,900.0,10,0,0
+MD,700.0,1,700.0,1,0,0
+NY,5000.0,1,0,0,5000.0,1
+OH,147.5,3,147.5,3,0,0
+WA,90.0,1,90.0,1,0,0

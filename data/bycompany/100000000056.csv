@@ -1,0 +1,8 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+IL,10000.0,1,0,0,10000.0,1
+MA,5964.82,7,5964.82,7,0,0
+MO,13358.88,4,13358.88,4,0,0
+NE,1542.29,2,1542.29,2,0,0
+TN,4000.0,2,4000.0,2,0,0
+TX,25.0,1,25.0,1,0,0
+WA,59.06,2,59.06,2,0,0

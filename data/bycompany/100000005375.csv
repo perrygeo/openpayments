@@ -1,0 +1,10 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+CA,617.92,7,617.92,7,0,0
+DC,108.27,1,108.27,1,0,0
+FL,136.63,1,136.63,1,0,0
+HI,54.95,1,54.95,1,0,0
+LA,89.76,1,89.76,1,0,0
+NY,220.23,3,220.23,3,0,0
+TN,30.78,1,30.78,1,0,0
+TX,336.22,3,336.22,3,0,0
+WA,119.68,1,119.68,1,0,0

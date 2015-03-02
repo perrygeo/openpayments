@@ -1,0 +1,7 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+AL,1000.0,1,1000.0,1,0,0
+MA,1000.0,1,1000.0,1,0,0
+MI,700.0,1,700.0,1,0,0
+NJ,500.0,1,500.0,1,0,0
+OH,900.0,1,900.0,1,0,0
+WA,800.0,1,800.0,1,0,0

@@ -1,0 +1,5 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+DC,2000.0,1,2000.0,1,0,0
+KY,4919.53,2,4919.53,2,0,0
+MD,28974.6,4,28974.6,4,0,0
+MI,30000.0,1,0,0,30000.0,1

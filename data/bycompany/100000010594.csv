@@ -1,0 +1,10 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+AZ,1900.0,10,1900.0,10,0,0
+CA,2510.0,4,2510.0,4,0,0
+FL,941.12,16,941.12,16,0,0
+GA,41.64,2,41.64,2,0,0
+NJ,1000.0,1,1000.0,1,0,0
+NV,1000.0,1,1000.0,1,0,0
+NY,800.0,4,800.0,4,0,0
+SC,512.0,2,512.0,2,0,0
+VA,16.39,1,16.39,1,0,0

@@ -1,0 +1,5 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+AL,500.0,1,500.0,1,0,0
+ID,500.0,1,500.0,1,0,0
+MN,750.0,2,750.0,2,0,0
+OH,250.0,1,250.0,1,0,0

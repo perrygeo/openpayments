@@ -1,0 +1,8 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+CA,70.0,1,70.0,1,0,0
+GA,826.4,5,826.4,5,0,0
+IL,60.0,1,60.0,1,0,0
+MD,3249.53,3,3249.53,3,0,0
+PA,1718.83,3,1718.83,3,0,0
+SC,36.84,1,36.84,1,0,0
+WA,6300.0,1,6300.0,1,0,0

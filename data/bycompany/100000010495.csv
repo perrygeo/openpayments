@@ -1,0 +1,4 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+NY,6000.0,3,6000.0,3,0,0
+TN,6050.0,3,6050.0,3,0,0
+TX,16891.0,8,16891.0,8,0,0

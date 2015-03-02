@@ -1,0 +1,5 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+AR,202724.0,2,0,0,202724.0,2
+FL,3000.0,1,0,0,3000.0,1
+MA,581635.0,6,0,0,581635.0,6
+PA,41.0,1,41.0,1,0,0

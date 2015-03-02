@@ -1,0 +1,10 @@
+state,dollars,payments,physican_dollars,physican_payments,hospital_dollars,hospital_payments
+GA,750.0,1,750.0,1,0,0
+KY,8.67,1,8.67,1,0,0
+MD,5.82,1,5.82,1,0,0
+MN,300.0,4,300.0,4,0,0
+NJ,1255.9,2,1255.9,2,0,0
+NY,48700.0,5,48700.0,5,0,0
+OH,67.89,1,67.89,1,0,0
+SD,300.0,3,300.0,3,0,0
+VA,900.0,10,900.0,10,0,0
