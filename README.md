@@ -7,8 +7,11 @@ This repository contains the code and data behind the
 I obtained the OpenPayments dataset, processed it according to the methods below, 
 and built an interactive map interface to visualize and explore the data.
 
-This analysis is limited to undisputed general payments with published identifying information. 
-The map only displays data for companies with greater than $1000 in total payments. 
+### Caveats
+
+* This analysis is limited to undisputed general payments with published identifying information. 
+* The map only displays data for companies with greater than $1000 in total payments. 
+* All of the caveats from the [data publisher's methodology](http://www.cms.gov/OpenPayments/Downloads/OpenPaymentsDataDictionary.pdf) apply
 
 ### Methods
 
