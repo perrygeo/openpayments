@@ -1,14 +1,5 @@
 
-var map = d3.geomap.choropleth()
-    .geofile('data/usa_states.json')
-    .projection(d3.geo.albersUsa)
-    .column('dollars')
-    .unitId('state')
-    .scale(1000)
-    .legend(true)
-    .colors(colorbrewer.YlGnBu[9])
-    .format(formatCurrency);
-
+var geomap;
 var companies = [];
 
 function formatCurrency(d) {
@@ -25,6 +16,14 @@ function formatCount(d) {
     return d3.format(',.00f')(d);
 }
 
+function loadingMsg(show) {
+    if (show) {
+        $("#loading").show();
+    } else {
+        $("#loading").hide();
+    }
+}
+
 function addToSelect(companies) {
     $.each(companies, function (index, d) {
         $('#select-company').append($('<option/>', { 
@@ -34,8 +33,7 @@ function addToSelect(companies) {
     });   
 }
 
-function slugify(text)
-{
+function slugify(text) {
   return text.toString().toLowerCase()
     .replace(/\s+/g, '-')           // Replace spaces with -
     .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
@@ -45,6 +43,7 @@ function slugify(text)
 }
 
 function displayCompanyInfo(id) {
+    loadingMsg(true);
     var company = getCompanyById(id);
 
     if (id == -1) {
@@ -88,14 +87,17 @@ function displayCompanyInfo(id) {
         $(".products").removeClass("null")
     }
 
-    // Update map data
-    var map = d3.geomap.choropleth()
-        .geofile('data/usa_states.json')
+    geomap = d3.geomap.choropleth()
+        // Instead of using the built-in geofile, load the usa_states.js as script
+        // which provides a statesTopojson global var
+        //.geofile('data/usa_states.json')  // This forces ajax request each time
+        .geodata(statesTopojson) // MP Custom property to cache request 
         .projection(d3.geo.albersUsa)
         .column('dollars')
         .unitId('state')
         .scale(1000)
         .legend(true)
+        .postUpdate(function() { loadingMsg(false); })
         .colors(colorbrewer.GnBu[9])
         .format(formatCurrency);
 
@@ -105,7 +107,7 @@ function displayCompanyInfo(id) {
         $('#map').html("");
         d3.select('#map')
             .datum(data)
-            .call(map.draw, map);
+            .call(geomap.draw, geomap);
     });     
 }
 
@@ -172,8 +174,7 @@ $(document).ready(function() {
         var startCompany = getCompanyByHash(window.location.hash);
         if (startCompany) { startId = startCompany.id; }
         selectizeElem[0].selectize.setValue(startId);
-
-        displayCompanyInfo(startId);
+        // This implicitly calls displayCompanyInfo(startId);
 
     }).fail(function(jqXHR, textStatus) {
         console.log("Request failed: " + textStatus);

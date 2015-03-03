@@ -20,25 +20,32 @@ p {
     max-width: 952px;
 }
 h1 {
-    padding: 48px 0 18px 0;
+    padding: 8px 0 8px 0;
     text-rendering: optimizelegibility;
     /*letter-spacing: .08em;*/
     margin-top: 21px;
     margin-bottom: 10.5px;
 }
 footer {
-    margin-top: 36px;
+    margin-top: 22px;
+    padding-top: 22px;
     text-align: center;
     font-size: 9pt;
 }
+hr {
+    border-top: 1px solid #eee;
+}
 #main {
-    border-bottom: 1px solid #eee;
-    padding: 12px 0 0 0;
+    padding: 8px;
+    padding-bottom: 28px;
+    border-top: 1px #eee solid;
+    border-bottom: 1px #eee solid;
     font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
 }
 h3 {
-    font-size: 135%;
-    line-height: 22pt !important;
+    font-size: 125%;
+    line-height: 24pt !important;
+    margin-bottom: -12px;
     font-family: Helvetica, Arial, sans-serif;
 }
 .company-name {
@@ -58,23 +65,43 @@ span.var {
     font-weight: 700;
 }
 .search-container {
-    width: 290px;
+    width: 310px;
+    margin-top: 18px;
+    margin-right: 12px;
+    float: right;
+}
+#company-total {
+    max-width: 460px;
     float: left;
 }
 .null {
     color: #ddd;
 }
-#map {
-    /*font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;*/
+#map-container {
+    min-width: 960px;  /* default in d3.geopath  */
+    min-height: 500px;  /* default in d3.geopath  */
+    margin-bottom: 12px;
+    position: relative;
+}
+#loading {
+    position: absolute;
+    min-width: 960px;  /* default in d3.geopath  */
+    min-height: 492px;  /* default in d3.geopath minus 8  */
+    top: 8px;
+    padding-top: 200px;
+    padding-left: 400px;
+    font-size: 180%;
+    font-weight: 800;
+    /*transition: visibility 2s linear 0.5s,opacity 0.5s linear;*/
+      transition-delay:1s;
 }
 sup {
     font-size:80%;
 }
 .selectize-dropdown, .selectize-input, .selectize-input input {
     text-align:left;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 95%;
-    line-height: 18px;
-    -webkit-font-smoothing: inherit;
+}
+
+#details {
+    margin-top: 28px;
 }
