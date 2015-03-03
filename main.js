@@ -2,7 +2,12 @@
 var geomap;
 var companies = [];
 
+function isNumber(obj) { return !isNaN(parseFloat(obj)) }
+
 function formatCurrency(d) {
+    if (!isNumber(d)) {
+        return d;
+    }
     if (d < 1e6) {
         d = d / 1000;
         return '$' + d3.format(',.01f')(d) + 'k';
