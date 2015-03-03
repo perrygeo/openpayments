@@ -45,7 +45,10 @@
         to Physicians and Hospitals,
         2013
     </h3>
-    <div id="map"></div>
+    <div id="map-container">
+      <div id="loading">Loading Map...</div>
+      <div id="map"></div>
+    </div>
     <div id="company-total">
       <span class="var" id="company-name">all companies</span>
       <div class="payment-summary dollars-total">
@@ -99,9 +102,10 @@
 <!-- End HTML Content -->
 </div>
 <script src="vendor/d3.geomap.dependencies.min.js"></script>
-<script src="vendor/d3.geomap.min.js"></script>
+<script src="vendor/d3.geomap.js"></script>
 <script src="vendor/jquery-1.11.2.min.js"></script> 
 <script src="vendor/selectize.js"></script> 
+<script src="data/usa_states.js"></script> 
 <script src="main.js"></script> 
 </body>
 </html>

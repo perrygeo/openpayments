@@ -378,6 +378,7 @@
         width: 960,
         height: 500,
         geofile: null,
+        geodata: null,
         postUpdate: null,
         projection: d3.geo.naturalEarth,
         rotate: [0, 0, 0],
@@ -446,11 +447,17 @@
         proj.rotate(geomap.properties.rotate);
       }
       geomap.properties.path = d3.geo.path().projection(proj);
-      return d3.json(geomap.properties.geofile, function(error, geo) {
-        geomap.geo = geo;
-        geomap.selection.units = geomap["private"].g.selectAll('path').data(topojson.feature(geo, geo.objects[geomap.properties.units]).features);
+      if (geomap.properties.geofile) {
+        return d3.json(geomap.properties.geofile, function(error, geo) {
+          geomap.geo = geo;
+          geomap.selection.units = geomap["private"].g.selectAll('path').data(topojson.feature(geo, geo.objects[geomap.properties.units]).features);
+          return geomap.update();
+        });
+      } else {
+        geomap.geo = geomap.properties.geodata;
+        geomap.selection.units = geomap["private"].g.selectAll('path').data(topojson.feature(geomap.properties.geodata, geomap.properties.geodata.objects[geomap.properties.units]).features);
         return geomap.update();
-      });
+      }
     };
 
     return Geomap;

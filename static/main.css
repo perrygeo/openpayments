@@ -77,9 +77,23 @@ span.var {
 .null {
     color: #ddd;
 }
-#map {
-    /*font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;*/
+#map-container {
+    min-width: 960px;  /* default in d3.geopath  */
+    min-height: 500px;  /* default in d3.geopath  */
     margin-bottom: 12px;
+    position: relative;
+}
+#loading {
+    position: absolute;
+    min-width: 960px;  /* default in d3.geopath  */
+    min-height: 492px;  /* default in d3.geopath minus 8  */
+    top: 8px;
+    padding-top: 200px;
+    padding-left: 400px;
+    font-size: 180%;
+    font-weight: 800;
+    /*transition: visibility 2s linear 0.5s,opacity 0.5s linear;*/
+      transition-delay:1s;
 }
 sup {
     font-size:80%;
