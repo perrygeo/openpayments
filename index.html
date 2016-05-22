@@ -23,19 +23,17 @@
 <h1> Geography of US Health Care Industry Payments</h1>
 <div id="details">
 <p>
-  The health care industry works collaboratively to solve the medical 
-  challenges of our day. Sometimes this collaboration includes covering the costs of
-  research, gifts, speaking fees, meals and travel. 
-  
+  In the United States in 2013, physicians and hospitals received at least $691 million of financial compensation<sup>*</sup>
+  from health care product manufacturers.
+</p>
+<p>
   Health care companies are <a href="http://www.ama-assn.org/ama/pub/advocacy/topics/sunshine-act-and-physician-financial-transparency-reports.page">required to disclose</a>
   their financial relationships with doctors and hospitals. The data is made publicly available
   through the <a href="http://www.cms.gov/openpayments/">Open Payments</a> system run by the Centers for Medicare & Medicaid Services.
 </p>
 <p>
-  In the United States in 2013, physicians and hospitals received at least $691 million of financial compensation<sup>*</sup>
-  from health care product manufacturers. 
-  This interactive map allows you to view the data by company to explore the geographic pattern of payments within the health care industry. 
-</p>  
+  This interactive map allows you to view the data by company, aggregated to the state level, to explore the geographic pattern of health care industry industry payments.
+</p>
 </div>
 
 <div id="main">
@@ -46,9 +44,9 @@
                 </select>
             </div>
         </section>
-    </div>  
-    <h3> 
-        Payments 
+    </div>
+    <h3>
+        Payments
         from Health Care Product Manufacturers
         <br>
         to Physicians and Hospitals,
@@ -67,40 +65,40 @@
         Located in
         <span id="location">United States</span>
       </div>
-    </div>    
+    </div>
     <div class="company-info">
         <span class="payment-summary physican">
-          Physicians received 
+          Physicians received
           <span class="var" id="payments-phys">2.7 million</span>
           payments
-          totaling 
+          totaling
           <span class="var" id="dollars-phys">$475M</span>
         </span>
         <br>
         <span class="payment-summary hospital">
-          Teaching Hospitals received 
+          Teaching Hospitals received
           <span class="var" id="payments-hosp">27 thousand</span>
-          payments totaling 
+          payments totaling
           <span class="var" id="dollars-hosp">$216M</span>
         </span>
         <br>
         <span class="payment-summary products">
-          Payments covered 
-          <span class="var" id="product-count"></span> 
+          Payments covered
+          <span class="var" id="product-count"></span>
           associated products:
-          <span class="var" id="product-list"></span> 
+          <span class="var" id="product-list"></span>
         </span>
     </div>
 </div>
 <footer>
   <p>
     * This analysis is limited to undisputed general payments with published identifying information (see <a href="https://github.com/perrygeo/visualize-openpayments#caveats">caveats</a>)
-    <br> 
-    Data source: Centers for Medicare & Medicaid Services <a href="http://www.cms.gov/OpenPayments/Explore-the-Data/Dataset-Downloads.html"><em>Open Payments</em></a>, version: 12/19/14 
+    <br>
+    Data source: Centers for Medicare & Medicaid Services <a href="http://www.cms.gov/OpenPayments/Explore-the-Data/Dataset-Downloads.html"><em>Open Payments</em></a>, version: 12/19/14
 
     <br>
     Created by
-    <a href="http://perrygeo.com">Matt Perry</a> 
+    <a href="http://perrygeo.com">Matt Perry</a>
     using <a href="https://sqlite.org/">sqlite</a>, <a href="http://python.org/">python</a> and <a href="http://d3-geomap.github.io/">d3.geomap</a>.
 
     <br>
@@ -112,10 +110,10 @@
 </div>
 <script src="vendor/d3.geomap.dependencies.min.js"></script>
 <script src="vendor/d3.geomap.min.js"></script>
-<script src="vendor/jquery-1.11.2.min.js"></script> 
-<script src="vendor/selectize.js"></script> 
-<script src="data/usa_states.js"></script> 
-<script src="main.js"></script> 
+<script src="vendor/jquery-1.11.2.min.js"></script>
+<script src="vendor/selectize.js"></script>
+<script src="data/usa_states.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
 
