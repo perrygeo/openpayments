@@ -1,6 +1,6 @@
 
 This repository contains the code and data behind the
-**Geography of US Health Care Industry Payments** map at [http://openpayments.perrygeo.com](http://openpayments.perrygeo.com).
+**Geography of US Health Care Industry Payments** map at [http://perrygeo.github.io/openpayments](http://perrygeo.github.io/openpayments).
 
 ### Overview
 
